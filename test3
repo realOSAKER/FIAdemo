@@ -1,0 +1,9 @@
+local character = game.Workspace:FindFirstChild("peNtEsT22476")
+local coins = workspace.Coins:GetChildren()
+
+for _, coin in ipairs(coins) do
+	if coin:IsA("BasePart") then
+		character:SetPrimaryPartCFrame(CFrame.new(coin.Position))
+		wait(0.5)
+	end
+end
