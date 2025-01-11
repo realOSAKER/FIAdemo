@@ -1,2 +1,2 @@
 task.wait(1)
-print("balls")
+game:GetService("ReplicatedStorage"):FindFirstChild("KeyPickedUp"):FireServer()
